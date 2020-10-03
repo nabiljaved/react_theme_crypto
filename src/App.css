@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 8px;
+  background: var(--main-body-dark);
+}
+
+/* CSS Variables */
+:root {
+  --main-body-dark: #1b1738;
+  --primary-color-red: red;
+  --main-component-theme: #242041;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+/* Main Container into Grid */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* side bar css*/
+.main-container-sidebar {
+  background: var(--main-component-theme);
+  min-height: 200px;
+  flex: 3%;
+  border-radius: 5px;
+}
+
+/* main container right css*/
+.main-container-main {
+  border-radius: 5px;
+  flex: 97%;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*main navigation items*/
+.main-nav__item a {
+  text-align: center;
+  margin: 10px;
+  display: block;
+}
+
+/*main navigation active icon*/
+.main-nav__item-active a {
+  border-radius: 50px;
+  border: 1px solid var(--main-body-dark);
+  padding: 5px;
+}
+
+/*main navigation image border radius*/
+.main-nav__item a > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/*side bar nav items*/
+.main-container-sidebar {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+/*top header*/
+.top-header {
+  background: var(--main-component-theme);
+  width: 100%;
+  padding: 5px;
+}
+
+/*top header ul give flex property*/
+.top-header-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*top header li items*/
+
+/*Left Dashboard*/
+.left-dashboard {
+  padding: 5px;
+  flex-basis: 28%;
+  height: 100vh;
+}
+
+/*Right Dashboard*/
+.Right-dashboard {
+  padding: 5px;
+  flex-basis: 70%;
+  height: 100vh;
+}
+
+/*Market Table*/
+.market-table {
+  margin: 0 auto;
+}
+
+/*all cards background*/
+.card-items {
+  background: var(--main-component-theme);
+}
+
+/*card input*/
+#myInput {
+  background-image: url("./components/img/search.png");
+  background-position: 50px 13px;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  width: 35%;
+  font-size: 12px;
+  border-radius: 20px;
+  border: 1px solid black;
+  margin-left: -8px;
+}
+
+/* active li to right section to input*/
+.input-right-active {
+  padding: 2px 5px;
+  background: green;
+  border-radius: 5px;
+}
+
+/*margin among other inputs*/
+.input--other-li {
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+/*table li even and odd colors*/
+/* tbody:nth-child(even) tr:nth-child(odd) {
+  background-color: #242043;
+  border-radius: 50%;
+}
+
+tbody:nth-child(even) tr:nth-child(even) {
+  background-color: #232242;
+  border-radius: 50%;
+} */
+
+/*main navigation image border radius*/
+.table-images {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+
+/*header image border radius*/
+.table-images-header {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+
+/* header image verified*/
+.table-images-verified {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* media queries*/
+@media (max-width: 768px) {
+  .main-container-sidebar {
+    display: none;
+  }
+
+  .main-container-main {
+    margin-left: 0px;
+    flex-basis: 100%;
+  }
+
+  .hide-fa-icon {
+    display: none;
+  }
+
+  .top-header-item {
+    border: 1px solid var(--main-body-dark);
+  }
+
+  .top-header-items {
+    flex-direction: column;
+  }
+}
