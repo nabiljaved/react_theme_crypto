@@ -142,17 +142,6 @@ body {
   margin-top: 2px;
 }
 
-/*table li even and odd colors*/
-/* tbody:nth-child(even) tr:nth-child(odd) {
-  background-color: #242043;
-  border-radius: 50%;
-}
-
-tbody:nth-child(even) tr:nth-child(even) {
-  background-color: #232242;
-  border-radius: 50%;
-} */
-
 /*main navigation image border radius*/
 .table-images {
   width: 22px;
@@ -172,6 +161,83 @@ tbody:nth-child(even) tr:nth-child(even) {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+
+/* graph section*/
+.section-graph {
+  width: 100%;
+  height: 500px;
+  background: var(--main-component-theme);
+  margin-top: 10px;
+  padding: 5px;
+}
+
+/* graph section top header*/
+.section-gaph-top {
+  display: flex;
+}
+
+/* graph section circle icons*/
+
+.graph-section-circle-icons {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #191536;
+  border: 1px solid grey;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 27px;
+}
+
+/* graph section header list date*/
+.graph-section-list-dates-items {
+  display: flex;
+  color: white;
+  align-items: center;
+  background: #191536;
+  border: 1px solid grey;
+  border-radius: 20px;
+  text-align: center;
+  margin-left: 5px;
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+/* graph section header list date items paddings*/
+.graph-section-list-dates-items li {
+  padding: 2px 8px;
+}
+
+/* graph section forex index items*/
+.graph-section-forex-index-items {
+  display: flex;
+  color: white;
+  align-items: center;
+  text-align: center;
+  margin-left: 1px;
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+/* graph section header forex items paddings*/
+.graph-section-forex-index-items li {
+  padding: 2px 8px;
+}
+
+/* divider*/
+hr.solid {
+  border-top: 3px solid var(--main-body-dark);
+}
+
+/*graph-middle image*/
+.section-gaph-middle-graph-image {
+  background-image: url("./components/img/graph-chart.jpg");
+  background-color: #cccccc;
+  height: 410px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* media queries*/
@@ -195,5 +261,14 @@ tbody:nth-child(even) tr:nth-child(even) {
 
   .top-header-items {
     flex-direction: column;
+  }
+
+  .section-gaph-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hide-graph-icons {
+    display: none;
   }
 }
