@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../sections/topsection/Header";
 import Graph from "../../sections/topsection/Graph";
 import Tabs from "../../sections/bottomsection/Tabs";
+import OrderLists from "../../sections/bottomsection/OrderLists";
 
 const Rightdashborad = (props) => {
   return (
@@ -9,6 +10,7 @@ const Rightdashborad = (props) => {
       <Header />
       <Graph />
       <Tabs />
+      <OrderLists />
     </div>
   );
 };

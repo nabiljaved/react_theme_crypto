@@ -42,7 +42,35 @@ const Graph = (props) => {
       </div>
       <hr class="solid" />
       <div className="section-gaph-middle">
-        <div className="section-gaph-middle-graph-image"></div>
+        <div
+          className="section-gaph-middle-graph-image"
+          style={{ color: "#fff", position: "relative" }}
+        >
+          <div
+            class="d-flex flex-row "
+            style={{ position: "absolute", bottom: "30px", left: "250px" }}
+          >
+            <div className="graph-section-circle-icons relative-icons">
+              <i className="fas fa-angle-left" style={{ color: "#fff" }}></i>
+            </div>
+
+            <div className="graph-section-circle-icons relative-icons">
+              <i className="fas fa-minus" style={{ color: "#fff" }}></i>
+            </div>
+
+            <div className="graph-section-circle-icons relative-icons">
+              <i className="fas fa-atom" style={{ color: "#fff" }}></i>
+            </div>
+
+            <div className="graph-section-circle-icons relative-icons">
+              <i className="fas fa-plus" style={{ color: "#fff" }}></i>
+            </div>
+
+            <div className="graph-section-circle-icons relative-icons">
+              <i className="fas fa-angle-right" style={{ color: "#fff" }}></i>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
