@@ -44,7 +44,6 @@ const Graph = (props) => {
       <div className="section-gaph-middle">
         <div className="section-gaph-middle-graph-image"></div>
       </div>
-      <div className="section-gaph-bottom"></div>
     </div>
   );
 };

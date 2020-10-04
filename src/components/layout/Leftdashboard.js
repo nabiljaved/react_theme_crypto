@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import MarketTable from "../../sections/topsection/MarketTable";
 import OrderTable from "../../sections/topsection/OrderTable";
 import LatestTransaction from "../../sections/topsection/LatestTransaction";

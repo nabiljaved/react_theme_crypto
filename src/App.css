@@ -234,10 +234,26 @@ hr.solid {
 .section-gaph-middle-graph-image {
   background-image: url("./components/img/graph-chart.jpg");
   background-color: #cccccc;
-  height: 410px;
+  height: 405px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/*section bottom tab section*/
+.section-bottom-tabs {
+  width: 100%;
+  height: 290px;
+  margin-top: 10px;
+  background: var(--main-component-theme);
+}
+
+.quickbuy {
+  margin-left: 20px;
+  background: #1a1736;
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 20%;
 }
 
 /* media queries*/
